@@ -1,37 +1,7 @@
 #!/usr/bin/env python3
-
 """
-* Write a function that takes in a float as an argument
-* This function should return the number of American coins and bills needed to represent that float. (Round to the nearest penny)
-
-Use the following denominations:
-
-    Penny: 1 cent
-    Nickel: 5 cent
-    Dime: 10 cent
-    Quarter: 25 cent
-    One-dollar bill
-    Five-dollar bill
-    Ten-dollar bill
-    Fifty-dollar bill
-    Hundred-dollar bill
-
-input: Float
-
-Example - 
-output:
-```
-[input]
-currency_converter(12.33)
-
-[output]
-1 $10
-2 $1
-1 quarter
-1 nickel
-3 penny
-```
-
+* Takes in a float as an argument
+* Returns the number of American coins and bills needed to represent that float. (Round to the nearest penny)
 """
 
 
@@ -57,5 +27,6 @@ def currency_converter(amount):
                 # amount = amount % currency_item
                 amount = amount % value
 
-    
-currency_converter(2345.18)
+
+if __name__ == "__main__":
+    currency_converter(2345.18)
