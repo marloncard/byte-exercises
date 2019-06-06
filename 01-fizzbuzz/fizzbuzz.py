@@ -9,19 +9,19 @@
 """
 
 def fizzbuzz(arg):
-    # TODO Loop from zero to arg
-    for i in range(len(arg)):
-    # If arg % 3 == 0 and arge % 5 == 0 print 'FizzBuzz'
-        if arg[i] % 3 == 0 and arg[i] % 5 == 0:
+    # Loop from zero to arg
+    for i in range(arg):
+    # If modulo of 3 and 5 is zero, print 'FizzBuzz'
+        if i % 3 == 0 and i % 5 == 0:
             print('FizzBuzz')
-    # If arg % 3 == 0 print 'Fizz'
-        elif arg[i] % 3 == 0:
+    # If modulo of only 3 is zero print 'Fizz'
+        elif i % 3 == 0:
             print('Fizz')
-    # If arg % 5 == 0 print 'Buzz'
-        elif arg[i] % 5 == 0:
+    # If modulo of only 5 is zero print 'Buzz'
+        elif i % 5 == 0:
             print('Buzz')
         else:
-            print(arg[i])
+            print(i)
 
 
-print(fizzbuzz([15, 30, 17, 18, 21, 55]))
+print(fizzbuzz(55))
